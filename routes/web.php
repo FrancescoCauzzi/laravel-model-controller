@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Guest\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// aprire un array, inserire la classe del controller come primo parametro (NomeController::class)
+// ,
+// nome della funzione da chiamare
+Route::get('/', [PageController::class, 'index'])->name('home');
