@@ -7,9 +7,8 @@
         Movies DB
     </h1>
 
-    <div class="d-flex flex-wrap justify.content-center __movie-list">
+    <div class="d-flex flex-wrap justify-content-center __movie-list">
         @foreach ($movies as $movie)
-        <div>
             <div class="card __card">
                 {{-- <img src="..." class="card-img-top" alt="..."> --}}
                 <div class="card-body">
@@ -21,7 +20,7 @@
 
                 </div>
               </div>
-        </div>
+
         @endforeach
     </div>
 </div>
