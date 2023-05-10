@@ -10,9 +10,21 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .__footer {
     position: fixed;
     bottom: 0;
+}
+
+.__movie-list {
+    gap: 10px;
+    li {
+        list-style: none;
+        .__card {
+            width: calc(100% / 5 * 1 - (10px / 5 * 4));
+            min-width: 230px;
+        }
+    }
 }
