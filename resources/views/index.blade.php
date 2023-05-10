@@ -14,7 +14,8 @@
                 <div class="card-body">
                   <h5 class="card-title">{{$movie->title}}</h5>
                   <h6>Original title: {{$movie->original_title}}</h6>
-                  <p>Nationality: {{$movie->nationality}}</p>
+                  {{-- ucwords() function is used to capitalize the first letter of each word in the string $myString that is separated by a slash (/) --}}
+                  <p>Nationality: {{ucwords($movie->nationality,'/')}}</p>
                   <p>Year: {{$movie->date}}</p>
                   <p>Rate: {{$movie->vote}}</p>
 
