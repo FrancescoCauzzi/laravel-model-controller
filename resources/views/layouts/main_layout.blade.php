@@ -17,15 +17,13 @@
 
 <body>
 
-
     @include('layouts/partials/header')
 
-    @yield('content')
+    <div class="py-5">
+        @yield('content')
+    </div>
 
     @include('layouts/partials/footer')
-
-
-
 
 </body>
 

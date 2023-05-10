@@ -1,7 +1,7 @@
 @extends('layouts/main_layout')
 
 @section('content')
-<div class="container">
+<div class="container py-5">
 
     <h1>
         Movies DB
