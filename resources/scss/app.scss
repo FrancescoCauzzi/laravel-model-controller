@@ -23,7 +23,7 @@
     li {
         list-style: none;
         .__card {
-            width: calc(100% / 5 * 1 - (10px / 5 * 4));
+            width: calc(100% / 4 * 1 - (10px / 4 * 3));
             min-width: 200px;
         }
     }
