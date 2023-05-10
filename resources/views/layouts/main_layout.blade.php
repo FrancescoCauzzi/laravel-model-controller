@@ -18,12 +18,14 @@
 <body>
 
 
+    @include('layouts/partials/header')
 
-    <div class="container">
-        @yield('content')
-    </div>
+    @yield('content')
 
-    <hr>
+    @include('layouts/partials/footer')
+
+
+
 
 </body>
 
